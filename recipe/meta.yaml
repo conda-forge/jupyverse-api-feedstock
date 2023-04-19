@@ -35,6 +35,7 @@ test:
     - jupyverse_api
   commands:
     - pip check
+    - jupyverse --help
   requires:
     - pip
 
