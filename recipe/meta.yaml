@@ -1,5 +1,5 @@
 {% set name = "jupyverse-api" %}
-{% set version = "0.1.10" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyverse_api-{{ version }}.tar.gz
-  sha256: e66a0360fc2476b5829b7793e296899293f960ce5d0276566481c6de0e749f10
+  sha256: 9fae648c92688b16177999e455ab196f0573845dbf801b35850debe5130d4f4e
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - hatchling
   run:
     - python >=3.8
-    - pydantic >=1.10.6,<2
+    - pydantic >=2,<3
     - fastapi >=0.95.0,<1
     - rich-click >=1.6.1,<2
     - asphalt >=4.11.0,<5
