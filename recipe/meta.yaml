@@ -1,5 +1,5 @@
 {% set name = "jupyverse-api" %}
-{% set version = "0.2.5" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyverse_api-{{ version }}.tar.gz
-  sha256: 16c249741c252aa6aca0ada8ac9a3b1b05c67d371a8be6c0fcebbbd45a1d7da4
+  sha256: 4aaf79735e6445ee754cb7ae318d124e4d2db9f3b70fff3f2b302054bf631803
 
 build:
   noarch: python
@@ -30,6 +30,7 @@ requirements:
     - asphalt-web >=1.1.0,<2
     - uvicorn >=0.17.6,<1
     - asgiref >=3.5,<4
+    - importlib_metadata >=4.4
 
 test:
   imports:
