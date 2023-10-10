@@ -30,6 +30,7 @@ requirements:
     - asphalt-web >=1.1.0,<2
     - uvicorn >=0.17.6,<1
     - asgiref >=3.5,<4
+    - importlib_metadata >=4.4
 
 test:
   imports:
