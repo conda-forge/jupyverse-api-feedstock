@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyverse_api-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jupyverse_api-{{ version }}.tar.gz
   sha256: fc8bca8e9919655b046870602839cdacbc56778c6034d3599704f204d8c7f952
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - jupyverse = jupyverse_api.cli:main
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pydantic >=2,<3
     - fastapi >=0.95.0,<1
     - rich-click >=1.6.1,<2
@@ -39,6 +39,7 @@ test:
     - jupyverse --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/jupyter-server/jupyverse/tree/main/jupyverse_api
