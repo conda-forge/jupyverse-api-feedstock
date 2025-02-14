@@ -26,11 +26,7 @@ requirements:
     - pydantic >=2,<3
     - fastapi >=0.95.0,<1
     - rich-click >=1.6.1,<2
-    - asphalt >=4.11.0,<5
-    - asphalt-web >=1.1.0,<2
-    - uvicorn >=0.17.6,<1
-    - asgiref >=3.5,<4
-    - importlib_metadata >=4.4
+    - fps >=0.1.1,<0.2.0
 
 test:
   imports:
