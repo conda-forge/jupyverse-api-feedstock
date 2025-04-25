@@ -23,10 +23,11 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
+    - importlib_metadata >=3.6
     - pydantic >=2,<3
     - fastapi >=0.95.0,<1
     - rich-click >=1.6.1,<2
-    - fps >=0.2.0,<0.3.0
+    - fps >=0.3.0,<0.4.0
 
 test:
   imports:
