@@ -1,5 +1,5 @@
 {% set name = "jupyverse-api" %}
-{% set version = "0.7.8" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jupyverse_api-{{ version }}.tar.gz
-  sha256: 7600e59800a8dc00451825c33936bba27cd965622edfd8ad8f19838d8af6ffe3
+  sha256: 14b4d0dcfa5776d81d94e8ddcffc5911a453099366045fa9681e71f3c6f2e478
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - pydantic >=2,<3
     - fastapi >=0.95.0,<1
     - rich-click >=1.6.1,<2
-    - fps >=0.3.0,<0.4.0
+    - fps >=0.4.0,<0.5.0
 
 test:
   imports:
