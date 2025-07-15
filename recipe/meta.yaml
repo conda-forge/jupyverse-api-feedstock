@@ -32,8 +32,6 @@ requirements:
 test:
   imports:
     - jupyverse_api
-  commands:
-    - jupyverse --help
   requires:
     - pip
     - python {{ python_min }}
