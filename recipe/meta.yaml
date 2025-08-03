@@ -1,5 +1,5 @@
 {% set name = "jupyverse-api" %}
-{% set version = "0.10.3" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jupyverse_api-{{ version }}.tar.gz
-  sha256: b9c4bc3858c313af8b635e9ff82a8bb4cf0be8c9988411fff04d5aa118294b76
+  sha256: fc0708134867108f0453301028dc08d19a36fadb7ea3246890275490b77eda06
 
 build:
   noarch: python
@@ -28,6 +28,7 @@ requirements:
     - fastapi-core >=0.95.0,<1
     - fps >=0.5.1,<0.6.0
     - anyio >=3.6.2,<5.0.0
+    - anyioutils >=0.7.4
 
 test:
   imports:
