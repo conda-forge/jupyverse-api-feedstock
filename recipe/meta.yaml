@@ -20,13 +20,12 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - hatchling
+    - uv-build
   run:
     - python >={{ python_min }}
-    - importlib-metadata >=3.6
     - pydantic >=2,<3
     - fastapi-core >=0.95.0,<1
-    - fps >=0.5.1,<0.6.0
+    - fps >=0.5.2,<0.6.0
     - anyio >=3.6.2,<5.0.0
     - anyioutils >=0.7.4
 
