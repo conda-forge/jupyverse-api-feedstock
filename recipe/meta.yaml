@@ -25,16 +25,21 @@ requirements:
     - python >={{ python_min }}
     - pydantic >=2,<3
     - fastapi-core >=0.95.0,<1
-    - fps >=0.5.7,<0.6.0
-    - anyio >=4.9.0,<5.0.0
+    - fps >=0.6.0,<0.7.0
+    - anyio >=4.12.1,<5.0.0
     - anyioutils >=0.7.4
+    - pycrdt >=0.12.46,<0.13.0
+    - httpx
+    - httpx-ws
 
 test:
+  requires:
+    - python {{ python_min }}
+    - pip
+  commands:
+    - pip check
   imports:
     - jupyverse_api
-  requires:
-    - pip
-    - python {{ python_min }}
 
 about:
   home: https://github.com/jupyter-server/jupyverse/tree/main/jupyverse_api
