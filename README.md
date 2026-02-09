@@ -7,9 +7,7 @@ Home: https://github.com/jupyter-server/jupyverse/tree/main/jupyverse_api
 
 Package license: BSD-3-Clause
 
-Summary: The public API for Jupyverse
-
-Development: https://github.com/jupyter-server/jupyverse/tree/main/jupyverse_api
+Summary: The public API for Jupyverse.
 
 Current build status
 ====================
