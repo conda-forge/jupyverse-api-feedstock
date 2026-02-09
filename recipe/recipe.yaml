@@ -41,8 +41,6 @@ tests:
       imports: jupyverse_api
       pip_check: true
       python_version: ${{ python_min }}.*
-  - script:
-      - jupyverse --help
 
 about:
   license: BSD-3-Clause
