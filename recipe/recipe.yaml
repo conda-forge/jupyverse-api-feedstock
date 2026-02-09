@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/j/jupyverse-api/jupyverse_api-${{ version }}.tar.gz
-    sha256: 2143166e1e1c1cfd07472ce0292e1407e2b43de1da171aa826bbf1f2ea922379
+    sha256: dab0e36cb007e26aea27a0462978950eb66534f0e2572351e7456c8be3db21c1
 
 build:
   noarch: python
@@ -41,6 +41,8 @@ tests:
       imports: jupyverse_api
       pip_check: true
       python_version: ${{ python_min }}.*
+  - script:
+      - jupyverse --help
 
 about:
   license: BSD-3-Clause
