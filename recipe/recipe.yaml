@@ -38,9 +38,16 @@ requirements:
 
 tests:
   - python:
-      imports: jupyverse_api
-      pip_check: true
-      python_version: ${{ python_min }}.*
+      imports:
+        - jupyverse_api
+  - requirements:
+      run:
+        - python ${{ python_min }}
+        - rich-click
+        - pip
+    script:
+      - pip check
+      - jupyverse --help
 
 about:
   license: BSD-3-Clause
