@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.14.0"
+  version: "0.14.1"
 
 package:
   name: jupyverse-api
@@ -9,11 +9,11 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/j/jupyverse-api/jupyverse_api-${{ version }}.tar.gz
-    sha256: dab0e36cb007e26aea27a0462978950eb66534f0e2572351e7456c8be3db21c1
+    sha256: e8a90f02fd443efc0273b014a2a2fc9b3912fd3be48f613825f2817eaf53f9b5
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script:
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
   python:
