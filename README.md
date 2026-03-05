@@ -3,11 +3,11 @@ About jupyverse-api-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyverse-api-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/jupyter-server/jupyverse/tree/main/jupyverse_api
+Home: https://github.com/jupyter-server/jupyverse/tree/main/api/api
 
 Package license: BSD-3-Clause
 
-Summary: The public API for Jupyverse.
+Summary: The API for Jupyverse.
 
 Current build status
 ====================
