@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.15.0"
+  version: "0.15.1"
 
 package:
   name: jupyverse-api
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/j/jupyverse-api/jupyverse_api-${{ version }}.tar.gz
-    sha256: 4d3dee671c79e6142802b5bd67c304a711ce2473930193405c18577aff6805ee
+    sha256: 041004d512a4e5b8c2bd09bd24863e9da503db35e5e4364619383c6cd8e90259
 
 build:
   noarch: python
@@ -29,9 +29,9 @@ requirements:
     - python >=${{ python_min }}
     - anyio >=4.12.1,<5.0.0
     - fastapi-core >=0.95.0,<1.0.0
-    - fps >=0.6.0,<0.7.0
+    - fps >=0.6.3,<0.7.0
     - structlog
-    - pydantic >=2,<3.0.0
+    - pydantic >=2,<3
 
 tests:
   - python:
