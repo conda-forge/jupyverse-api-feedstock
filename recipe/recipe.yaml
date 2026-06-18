@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.15.1"
+  version: "0.15.2"
 
 package:
   name: jupyverse-api
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/j/jupyverse-api/jupyverse_api-${{ version }}.tar.gz
-    sha256: 041004d512a4e5b8c2bd09bd24863e9da503db35e5e4364619383c6cd8e90259
+    sha256: 361c060a956381466b624f9bfceb4cdf4b3e07eb3477b0b50258fa2695d59060
 
 build:
   noarch: python
